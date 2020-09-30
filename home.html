@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+</head>
+<body>
+
+</body>
+<?php
+		session_start();
+		$con=mysqli_connect('localhost','root','','iwpda');
+		if (!$con) 
+		{
+    		die('Could not connect: ' . mysqli_error($con));
+		}
+		$customer_id = $_GET['customer_id'];
+
+		echo $customer_id;
+
+		
+	?>
+</html>
